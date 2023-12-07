@@ -10,9 +10,7 @@ class CostPage extends StatefulWidget {
   // const CostPage({super.key});
   const CostPage({
     super.key,
-    required this.keyValue,
   });
-  final GlobalKey keyValue;
 
   @override
   CostPageState createState() => CostPageState();
@@ -65,8 +63,7 @@ class CostPageState extends State<CostPage> {
           //        borderRadius: new BorderRadius.circular((20.0)), // 圆角度
           // borderRadius: new BorderRadius.vertical(top: Radius.elliptical(20, 50)), // 也可控件一边圆角大小
         ),
-        child: Container(
-          key: widget.keyValue,
+        child: SizedBox(
           child: Row(
             children: [
               Expanded(
